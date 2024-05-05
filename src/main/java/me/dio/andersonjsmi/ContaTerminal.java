@@ -8,19 +8,19 @@ public class ContaTerminal {
         Conta conta = new Conta();
         String read;
         System.out.println("Por favor, digite o número da Conta!");
-        read = scanner.next();
+        read = scanner.nextLine();
         conta.setNumero(Integer.parseInt(read));
 
         System.out.println("Por favor, digite o número da Agência!");
-        read = scanner.next();
+        read = scanner.nextLine();
         conta.setAgencia(read);
 
         System.out.println("Por favor, digite o Nome do Propietário Conta!");
-        read = scanner.next();
+        read = scanner.nextLine();
         conta.setNome(read);
 
         System.out.println("Por favor, digite o saldo da Conta!");
-        read = scanner.next();
+        read = scanner.nextLine();
         conta.setSaldo(Double.parseDouble(read));
 
         System.out.println("Olá " + conta.getNome()
